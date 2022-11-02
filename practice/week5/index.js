@@ -30,7 +30,7 @@ const createScore = async (name, course, midterm, final) => {
 	const { course, final } = scoreData;
 	console.log(`Course: ${course} / Final score: ${final}`);
 	console.dir(await getScoreByIdName(9, 'Barack'));
-	const newScore = await createScore('Barack', 'Operating Systems', 83, 62);
+	//const newScore = await createScore('Barack', 'Operating Systems', 83, 62);
 	console.dir(await getScoreByIdName(9, 'Barack'));
 	console.dir(await getScoreByIdName(newScore.insertId, 'Barack'));
 })();
